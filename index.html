@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="광운대학교 멋쟁이사자처럼 대학 소개 페이지 - 최신 웹 UI/UX로 깔끔하고 직관적인 경험을 제공합니다."
+    />
+    <title>광운대학교 멋쟁이사자처럼 대학</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="header">
+      <div class="container nav">
+        <a href="#top" class="brand" aria-label="홈으로 이동">
+          <img class="brand-logo" src="./image.png" alt="멋쟁이사자처럼 로고" />
+          <span class="brand-text">광운대 멋쟁이사자처럼 개발로개발팀</span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+          메뉴
+        </button>
+        <nav id="nav-links" class="nav-links" aria-label="주요 메뉴">
+          <a href="#about">소개</a>
+          <a href="#program">프로그램</a>
+          <a href="#culture">문화</a>
+          <a href="#faq">FAQ</a>
+          <a href="#apply" class="btn btn-sm">지원하기</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container reveal">
+        <p class="chip">광운대학교 멋쟁이사자처럼 대학 개발로 개발팀</p>
+        <h1>
+          모두가 <span class="text-gradient">창의적으로</span>,
+          모두가 배우는 세상
+        </h1>
+        <p class="hero-copy">
+          광운대 멋쟁이사자처럼은 서로의 아이디어를 존중하며,
+          함께 실험하고 함께 성장하는 개발로개발발팀입니다.
+          배우는 열정이 서비스 완성으로 이어지는 커뮤니티를 지향합니다.
+        </p>
+        <div class="hero-actions">
+          <a href="#apply" class="btn">지원불가</a>
+          <a href="#about" class="btn btn-ghost">활동 더 보기</a>
+        </div>
+        <ul class="hero-stats" aria-label="주요 통계">
+          <li><strong>10주+</strong><span>실전 프로젝트 트랙</span></li>
+          <li><strong>8명+</strong><span>협업 중심 운영</span></li>
+          <li><strong>1팀 1서비스</strong><span>데모데이 발표</span></li>
+        </ul>
+      </section>
+
+      <section id="about" class="section container reveal">
+        <div class="section-head">
+          <p class="eyebrow">ABOUT</p>
+          <h2>광운 멋사는 이렇게 움직입니다</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Problem First</h3>
+            <p>
+              기술 스택보다 문제 정의를 먼저 고민합니다.
+              사용자의 불편을 발견하고, 빠르게 MVP를 만들어 검증합니다.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Build in Public</h3>
+            <p>
+              주차별 회고와 공개 피드백으로 성장합니다.
+              과정 자체를 자산으로 남겨 다음 프로젝트에 연결합니다.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Team Synergy</h3>
+            <p>
+              기획, 디자인, 개발이 하나의 제품 팀처럼 협업합니다.
+              역할은 다르지만 목표는 하나, 완성도 있는 결과물입니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="program" class="section container reveal">
+        <div class="section-head">
+          <p class="eyebrow">PROGRAM</p>
+          <h2>한 학기 로드맵</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span>01</span>
+            <h3>온보딩 & 팀빌딩</h3>
+            <p>문제 탐색, 관심사 기반 팀 구성, 아이디어 검증</p>
+          </article>
+          <article class="timeline-item">
+            <span>02</span>
+            <h3>집중 개발 스프린트</h3>
+            <p>주차별 기능 목표 설정, 코드 리뷰, 실제 배포</p>
+          </article>
+          <article class="timeline-item">
+            <span>03</span>
+            <h3>데모데이 & 회고</h3>
+            <p>서비스 발표, 사용자 피드백, 다음 시즌 연결</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="culture" class="section container reveal">
+        <div class="section-head">
+          <p class="eyebrow">CULTURE</p>
+          <h2>함께 성장하는 팀 문화</h2>
+        </div>
+        <div class="culture-wrap">
+          <div class="quote-card">
+            <p>
+              "혼자서는 시작이 어렵지만, 함께라면 끝까지 만들 수 있습니다."
+            </p>
+            <span>- 광운 멋사 운영진</span>
+          </div>
+          <ul class="check-list">
+            <li>주 1회 스터디 & 코드 리뷰</li>
+            <li>팀 단위 프로젝트 운영</li>
+            <li>선배 기수 멘토링 연결</li>
+            <li>포트폴리오 완성까지 지원</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="faq" class="section container reveal">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>자주 묻는 질문</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>개발이 처음이어도 지원 가능한가요?</summary>
+            <p>
+              가능합니다. 기본 트랙과 프로젝트 트랙을 함께 운영해,
+              입문자도 단계적으로 실력을 키울 수 있도록 돕습니다.
+            </p>
+          </details>
+          <details>
+            <summary>어떤 스택으로 프로젝트를 진행하나요?</summary>
+            <p>
+              팀 목표에 따라 선택하지만, 주로 React, Node.js, Python,
+              Cloudflare, GitHub 기반 협업을 많이 사용합니다.
+            </p>
+          </details>
+          <details>
+            <summary>활동 시간은 어느 정도 필요한가요?</summary>
+            <p>
+              주 1회 정기 세션과 팀별 추가 협업 시간이 필요합니다.
+              실제 서비스 완성을 목표로 운영됩니다.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section id="apply" class="section container reveal">
+        <div class="cta-card">
+          <h2>이번 학기, 직접 만들어볼 차례입니다</h2>
+          <p>
+            광운대학교 멋쟁이사자처럼 대학에서
+            팀과 함께 문제를 해결하고, 결과물로 성장하세요.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn">지원 폼 열기</a>
+            <a href="#" class="btn btn-ghost">문의하기</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 KWANGWOON LIKELION UNIVERSITY. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
