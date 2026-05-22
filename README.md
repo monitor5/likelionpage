@@ -25,3 +25,11 @@ npm run preview
 - 공개 URL: `https://monitor5.github.io/likelionpage/`
 
 GitHub 저장소의 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정하면, `main` 브랜치에 push될 때 자동으로 빌드 후 배포됩니다.
+
+## Cloudflare Pages 배포
+
+`likelion.uk`처럼 루트 도메인에서 배포할 때는 Cloudflare Pages 환경 변수 `CF_PAGES`가 감지되어 Vite `base`가 `/`로 빌드됩니다.
+
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Wrangler Pages output: `wrangler.toml`

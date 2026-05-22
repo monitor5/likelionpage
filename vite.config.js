@@ -4,7 +4,7 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/likelionpage/',
+  base: globalThis.process?.env?.CF_PAGES ? '/' : '/likelionpage/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
