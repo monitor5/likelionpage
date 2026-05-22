@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
+@import "tailwindcss";
+
+/* 1. 로컬 폰트 파일 등록 (@font-face) */
+@font-face {
+  font-family: 'NotoSerifKR';
+  src: url('./assets/fonts/NotoSerifKR-Regular.woff2') format('woff2'),
+       url('./assets/fonts/NotoSerifKR-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerifKR';
+  src: url('./assets/fonts/NotoSerifKR-Medium.woff2') format('woff2'),
+       url('./assets/fonts/NotoSerifKR-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSerifKR';
+  src: url('./assets/fonts/NotoSerifKR-Bold.woff2') format('woff2'),
+       url('./assets/fonts/NotoSerifKR-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 2. Tailwind v4 테마 확장 및 기본 폰트로 지정 */
+@theme {
+  --font-serif: 'NotoSerifKR', serif;
+}
+
+/* 3. 웹사이트 전체 body 태그에 명조(serif) 폰트 패밀리 기본 적용 */
+body {
+  font-family: var(--font-serif);
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -13,9 +50,9 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: 'Noto Sans KR', 'Segoe UI', Roboto, sans-serif;
+  /* --sans: 'Noto Sans KR', 'Segoe UI', Roboto, sans-serif;
   --heading: 'Noto Sans KR', 'Segoe UI', Roboto, sans-serif;
-  --mono: 'Noto Sans KR', Consolas, monospace;
+  --mono: 'Noto Sans KR', Consolas, monospace; */
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -26,6 +63,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 
   @media (max-width: 1024px) {
     font-size: 16px;

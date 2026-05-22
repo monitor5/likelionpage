@@ -18,7 +18,7 @@ const Navbar = ({ setPage, currentPage }) => {
           className="flex items-center gap-7 font-bold cursor-pointer bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
         >
           <img src={Img_lion} className='w-20'/>
-          멋쟁이사자처럼 14th MT
+          LIKELION 14th MT
         </h1>
 
         <div className="flex gap-7">
@@ -32,16 +32,16 @@ const Navbar = ({ setPage, currentPage }) => {
           <button 
             onClick={() => setPage('scoreboard')} 
             className={getBtnStyle('scoreboard')}
-            className="cursor-pointer border-1 p-3 rounded-lg"
+            className="cursor-pointer border-2 p-3 rounded-lg text-lg w-40"
           >
-            Scoreboard
+            Score Board
           </button>
           <button 
             onClick={() => setPage('games')} 
             className={getBtnStyle('games')}
-            className="cursor-pointer border-1 p-3 rounded-lg"
+            className="cursor-pointer border-2 p-3 rounded-lg text-lg w-30"
           >
-            Games
+            Timer
           </button>
         </div>
       </div>
