@@ -1,18 +1,27 @@
-# React + Vite
+# LIKELION MT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+멋쟁이사자처럼 MT 진행용 React/Vite 페이지입니다. 팀 소개, 점수판, 게임 진행 화면을 포함합니다.
 
-Currently, two official plugins are available:
+## 로컬 실행
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm ci
+npm run dev
+```
 
-## React Compiler
+## 빌드 확인
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+```bash
+npm run build
+npm run preview
+```
 
-Note: This will impact Vite dev & build performances.
+## GitHub Pages 배포
 
-## Expanding the ESLint configuration
+이 프로젝트는 `monitor5/likelionpage` 레포의 GitHub Pages 배포를 기준으로 설정되어 있습니다.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Vite `base`: `/likelionpage/`
+- 배포 워크플로우: `.github/workflows/deploy.yml`
+- 공개 URL: `https://monitor5.github.io/likelionpage/`
+
+GitHub 저장소의 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정하면, `main` 브랜치에 push될 때 자동으로 빌드 후 배포됩니다.
