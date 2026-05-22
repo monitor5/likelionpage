@@ -7,6 +7,7 @@
     "dev": "vite",
     "prebuild": "node scripts/prepare-vite-index.mjs",
     "build": "vite build",
+    "build:cloudflare": "node scripts/build-cloudflare.mjs",
     "postbuild": "node scripts/restore-cloudflare-root.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
