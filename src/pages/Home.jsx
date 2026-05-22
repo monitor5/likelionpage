@@ -3,7 +3,7 @@
 const Home = () => {
   const schedule = [
     { time: "~ 17:30", activity: "숙소 도착 및 조 편성" },
-    { time: "17:30", activity: "아이스브레이킹 및 실내 게임" },
+    { time: "18:00", activity: "아이스브레이킹 및 실내 게임" },
     { time: "19:30", activity: "바비큐 파티 🍖" },
     { time: "21:00", activity: "본격 레크리에이션" },
     { time: "23:00", activity: "자유 시간 및 친목 도모" },
