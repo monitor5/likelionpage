@@ -1,6 +1,7 @@
-# LIKELION MT
+# 광운대학교 멋쟁이사자처럼 소개 페이지
 
-React/Vite로 만든 LIKELION MT 진행용 페이지입니다. 팀 소개, 점수판, 게임 진행 화면을 포함합니다.
+React/Vite/Tailwind로 만든 광운대학교 멋쟁이사자처럼(LIKELION UNIV. KWANGWOON) 소개 페이지입니다.
+동아리 소개, 성장 트랙, 연간 여정, FAQ, 지원 안내를 담고 있습니다.
 
 ## Local
 
