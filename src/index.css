@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
-/* 1. 로컬 폰트 파일 등록 (@font-face) */
+/* 로컬 폰트 등록: 제목용 명조 폰트 */
 @font-face {
   font-family: 'NotoSerifKR';
   src: url('./fonts/NotoSerifKR-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
   src: url('./fonts/NotoSerifKR-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,127 +22,33 @@
   src: url('./fonts/NotoSerifKR-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
-/* 2. Tailwind v4 테마 확장 및 기본 폰트로 지정 */
 @theme {
-  --font-serif: 'NotoSerifKR', serif;
+  /* 제목용 세리프, 본문용 산세리프 */
+  --font-serif: 'NotoSerifKR', 'Noto Serif KR', serif;
+  --font-sans: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR',
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* 브랜드 컬러: 멋사 오렌지 + 광운 버건디 */
+  --color-lion: #ff6b00;
+  --color-lion-deep: #d95800;
+  --color-kw: #7a1f1a;
+  --color-kw-deep: #5c130f;
+  --color-ink: #1c1917;
+  --color-paper: #fffaf5;
 }
 
-/* 3. 웹사이트 전체 body 태그에 명조(serif) 폰트 패밀리 기본 적용 */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: var(--font-serif);
-}
-
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
-  /* --sans: 'Noto Sans KR', 'Segoe UI', Roboto, sans-serif;
-  --heading: 'Noto Sans KR', 'Segoe UI', Roboto, sans-serif;
-  --mono: 'Noto Sans KR', Consolas, monospace; */
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-paper);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
-
-body {
-  margin: 0;
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+  text-rendering: optimizeLegibility;
 }
